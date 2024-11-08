@@ -1,83 +1,60 @@
-const caixaPrincipal= document.querySelector('.caixa-principal');
-const caixaPeguntas= document.querySelector(".caixa-peguntas")
-const caixaAlternativas= document.querySelector(".caixa-alternativas");
-const caixaResultado= document.querySelector("caixa-resultado");
-const textoResultado= document.querySelector(".texto-resultado");
+const caixaPrincipal = document.querySelector('.caixa-principal');
+const caixaPerguntas = document.querySelector(".caixa-perguntas");
+const caixaAlternativas = document.querySelector(".caixa-alternativas");
+const caixaResultado = document.querySelector(".caixa-resultado");
+const textoResultado = document.querySelector(".texto-resultado");
 
-const= perguntas {
-
-    enunciado: "Quantos litros de sangue uma pessoa tem?",
+const perguntas = [
+    {
+        enunciado: "Quantos litros de sangue uma pessoa tem?",
         alternativas: [
             "Tem entre 2 a 4 litros de sangue",
             "Tem entre 4 a 6 litros de sangue"
         ],
-        correta: 1 // A primeira alternativa é a correta
+        correta: 1
     },
     {
-        enunciado: "De quem é a famosa frase? Penso, logo existo",
+        enunciado: "De quem é a famosa frase 'Penso, logo existo'?",
         alternativas: [
             "Descartes",
             "Platão"
         ],
-        correta: 1 // A segunda alternativa é a correta
+        correta: 0
     },
     {
-        enunciado: "De onde é a invenção do cuveiro elétrico?",
+        enunciado: "De onde é a invenção do chuveiro elétrico?",
         alternativas: [
             "Inglaterra",
             "Brasil"
         ],
-        correta: 0
+        correta: 1
     },
     {
         enunciado: "Quais o menor e maior país do mundo?",
         alternativas: [
-            "São marino e Índia",
+            "São Marino e Índia",
             "Vaticano e Rússia"
         ],
-        correta: 0
+        correta: 1
     },
     {
-        enunciado: "Qual livro mais vendido no mundo a seguir á Bíblia?",
+        enunciado: "Qual o livro mais vendido no mundo a seguir à Bíblia?",
         alternativas: [
-            "O senhor dos Anéis",
+            "O Senhor dos Anéis",
             "Dom Quixote"
         ],
-        correta: 0
-}
+        correta: 1
+    }
+];
 
-
-
-
-
-let atual = 0
+let atual = 0;
 let perguntaAtual;
-let pontuação = 0
+let pontuacao = 0;
 
-function mostrarPegunta(){
-    perguntaAtual = pergunta[atual]
-    caixaPerguntas.textContent = perguntaAtual.enunciado
-    caixaAlternativas.innerHTML = perguntaAtual.enunciado
-    
+function mostrarPergunta() {
+    perguntaAtual = perguntas[atual];
+    caixaPerguntas.textContent = perguntaAtual.enunciado;
+    caixaAlternativas.innerHTML = ""; // Limpa as alternativas anteriores
 
-    perguntaAtual.alternativas.forEach (alternativas, index) => {
-        const botao = documennt.createElement("button");
-        botao.addEventListener("click"), () => verificaResposta(index);
-        caixaAlternativas.appendChild(botao);
-
-   
-    });
-
-}
-function verificaResposta(Seleciona){
-    if(selecionad == perguntaAtual.correta){
-        pontuação++;
-    }
-    atual++;
-    if (atual < perguntas.length){
-       mostarPergunta();
-    }else {
-       mostrarResultado();
-       
-    }
-}
+    perguntaAtual.alternativas.forEach((alternativa, index) => {
+        const botao = document.createElement("button");
