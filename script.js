@@ -27,7 +27,7 @@ const perguntas = [
             "Inglaterra",
             "Brasil"
         ],
-        correta: 1
+        correta: 0
     },
     {
         enunciado: "Quais o menor e maior país do mundo?",
