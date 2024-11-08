@@ -9,7 +9,7 @@
     /* Cor do texto de destaque (questões/botões) */
     --cor-destaque: #00c3ff;
     /* Cor do texto das perguntas */
-    --cor-texto: #fafafa;
+    --cor-texto: #3a2a2a;
     /* Cor do efeito hover dos botões */
     --cor-fade-botao: #95ddff;
 }
