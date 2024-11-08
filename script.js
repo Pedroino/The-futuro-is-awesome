@@ -16,7 +16,7 @@ const perguntas = [
     {
         enunciado: "De quem é a famosa frase 'Penso, logo existo'?",
         alternativas: [
-            "Descartes",
+            "René Descartes",
             "Platão"
         ],
         correta: 0
