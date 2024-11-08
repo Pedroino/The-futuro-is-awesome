@@ -51,7 +51,7 @@ let atual = 0;
 let perguntaAtual;
 let pontuacao = 0;
 
-f// FUNÇÃO MOSTRAR PERGUNTAS
+// FUNÇÃO MOSTRAR PERGUNTAS
 function mostrarPergunta() {
     perguntaAtual = perguntas[atual];
     caixaPerguntas.textContent = perguntaAtual.enunciado;
