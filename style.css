@@ -1,13 +1,13 @@
 /* Definição de variáveis CSS para as cores usadas no design */
 :root {
     /* Cor do fundo */
-    --cor-fundo: #f10c0c;
+    --cor-fundo: #ffffff;
     /* Cor da caixa principal */
     --cor-principal: #7d90a8;
     /* Cor da caixa secundária */
     --cor-secundaria: #212333;
     /* Cor do texto de destaque (questões/botões) */
-    --cor-destaque: #00ff37;
+    --cor-destaque: #00c3ff;
     /* Cor do texto das perguntas */
     --cor-texto: #fafafa;
     /* Cor do efeito hover dos botões */
