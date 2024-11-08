@@ -3,11 +3,11 @@
     /* Cor do fundo */
     --cor-fundo: #ffffff;
     /* Cor da caixa principal */
-    --cor-principal: #f5ffc7;
+    --cor-principal: #000000;
     /* Cor da caixa secundária */
     --cor-secundaria: #212333;
     /* Cor do texto de destaque (questões/botões) */
-    --cor-destaque: #c1e6f1;
+    --cor-destaque: #ffffff;
     /* Cor do texto das perguntas */
     --cor-texto: #000000;
     /* Cor do efeito hover dos botões */
